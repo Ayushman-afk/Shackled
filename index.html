@@ -32,6 +32,7 @@
         flex-direction: column;
 
     }</style>
+
     <style>h1 {
         font-size: 95px;
         text-shadow: 0 0 50px #c084fc;
@@ -42,6 +43,7 @@
         font-family: AlienBlock;
         color: lightgray;
     }</style>
+
     <style>button {
         font-size: 26px;
         width: 250px;
@@ -52,35 +54,55 @@
         color: whitesmoke;
 
     }</style>
+
     <style>button:hover {
         background-color: #8b5cf6;
         box-shadow: 0 0 20px white;
     }</style>
     <!--The button Style is both for Settings and Play Buttons-->
+
 </head>
+
 <body>
-<h1>Shackled</h1>
-<p> A Chaotic Multiplayer co-op Game </p>
-
-
-<script type="py" src ="./main.py"></script>
-</body>
-</html>
-
-<div id="mainmenu">
+    <div id="mainmenu">
     <h1>Shackled</h1>
     <p>A Chaotic Multiplayer co-op Game</p>
-    <button id="mainscreenplay">Play</button>
+    <button id="mainscreenplay" onclick="goToPlayScreen()">Play</button>
     <button id="mainscreensettings">Settings</button>
-</div>
+    </div>
 
 <div id="playscreen">
     <h2>Choose Your Mode</h2>
+
     <button id="solo">Solo</button>
     <button id="twoplayer">2 Player</button>
 </div>
 
+<script>
+    function goToPlayScreen() {
+        document.getElementById('mainmenu').style.display = 'none';
+
+        document.getElementById('playscreen').style.display = 'block';
+    }
+</script>
+
+    }
 <script type="py" src="./main.py"></script>
+
+
+ <!--<button id="test_button" onclick=" window.open('https://google.com','_blank')"> Google</button>-->
+
+
+
+
 
 </body>
 </html>
+
+
+
+
+
+
+
+
